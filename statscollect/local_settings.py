@@ -30,6 +30,3 @@ else:
 		}
 	}
 
-PHANTOMJS_BIN_PATH = os.path.join(os.getenv('OPENSHIFT_DATA_DIR'), 'phantomjs', 'bin', 'phantomjs')
-PHANTOMJS_LOG_PATH = os.path.join(os.getenv('OPENSHIFT_LOG_DIR'), 'ghostdriver.log')
-

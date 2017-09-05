@@ -148,7 +148,7 @@ class GamesheetProcessor():
             # search again with secondary choices this time.
             matching_results = process.extractBests(team_name,
                                                     self.team_choices_secondary,
-                                                    score_cutoff=50,
+                                                    score_cutoff=80,
                                                     limit=1)
         if len(matching_results) > 0:
             home_result, ratio, team_id = matching_results[0]
