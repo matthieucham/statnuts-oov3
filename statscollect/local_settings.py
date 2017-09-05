@@ -9,12 +9,12 @@ if ON_OPENSHIFT:
     ALLOWED_HOSTS = ['*']
     DATABASES = {
         'default': {
-            'NAME': 'statnuts',
+            'NAME': os.getenv('POSTGRESQL_DATABASE'),
 			'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'USER': os.getenv('OPENSHIFT_POSTGRESQL_DB_USERNAME'),
-            'PASSWORD': os.getenv('OPENSHIFT_POSTGRESQL_DB_PASSWORD'),
-            'HOST': os.getenv('OPENSHIFT_POSTGRESQL_DB_HOST'),
-            'PORT': os.getenv('OPENSHIFT_POSTGRESQL_DB_PORT'),
+            'USER': os.getenv('POSTGRESQL_USER'),
+            'PASSWORD': os.getenv('POSTGRESQL_PASSWORD'),
+            'HOST': os.getenv('POSTGRESQL_SERVICE_HOST'),
+            'PORT': os.getenv('POSTGRESQL_SERVICE_PORT'),
             }
     }
 else:
