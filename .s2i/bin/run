@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "CUSTOM RUN"
+echo "Fixing the mess:"
+chmod 755 /opt/app-root/src/app.sh
+echo "Running stock run:"
+${STI_SCRIPTS_PATH}/run
