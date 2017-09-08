@@ -4,5 +4,3 @@ ${STI_SCRIPTS_PATH}/assemble
 
 echo "Fixing the mess:"
 chmod 755 ${OPENSHIFT_REPO_DIR}/app.sh
-echo "Django collectstatic"
-python ${OPENSHIFT_REPO_DIR}/manage.py collectstatic --noinput
