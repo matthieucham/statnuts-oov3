@@ -60,9 +60,9 @@ fi
 # the correct location or otherwise build application artefacts from the
 # source code and move that into place.
 
-echo " -----> Running builder assemble script ($S2I_SCRIPTS_PATH/assemble)"
+echo " -----> Running builder assemble script ($STI_SCRIPTS_PATH/assemble)"
 
-$S2I_SCRIPTS_PATH/assemble
+$STI_SCRIPTS_PATH/assemble
 
 # Now run the 'build' hook from '.s2i/action_hooks' directory if it
 # exists. This hook is to allow a user to run additional build steps

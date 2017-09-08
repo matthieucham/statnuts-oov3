@@ -27,4 +27,4 @@ echo " -----> Contents of the current working directory after build run."
 ls -R .
 
 echo "Migrate DB"
-python $OPENSHIFT_REPO_DIR/wsgi/myproject/manage.py migrate --noinput
+python $OPENSHIFT_REPO_DIR/manage.py migrate --noinput

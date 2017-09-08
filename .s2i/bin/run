@@ -57,4 +57,4 @@ fi
 
 echo " -----> Running builder run script ($S2I_SCRIPTS_PATH/run)"
 
-exec $S2I_SCRIPTS_PATH/run
+exec $STI_SCRIPTS_PATH/run
